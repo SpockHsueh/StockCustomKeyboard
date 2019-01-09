@@ -72,6 +72,9 @@
                     <state key="normal" title=".">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="allNumsButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="HaZ-Co-ROs"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o21-bG-PXj">
                     <rect key="frame" x="97.5" y="265" width="87.5" height="50"/>
@@ -86,6 +89,9 @@
                     <state key="normal" title="0">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="allNumsButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Bk7-9e-Drt"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Am-ZT-SdT">
                     <rect key="frame" x="282.5" y="264" width="87.5" height="50"/>
@@ -99,6 +105,9 @@
                     <state key="normal" title="完成">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="donButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="7BZ-PH-e5k"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUy-k8-LqB">
                     <rect key="frame" x="190" y="265" width="87.5" height="50"/>
@@ -113,6 +122,9 @@
                     <state key="normal" title="00">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="allNumsButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Vjj-C7-aOJ"/>
+                    </connections>
                 </button>
                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2F-yc-Z2R" userLabel="nextKeyboardButton">
                     <rect key="frame" x="5" y="270" width="45" height="45"/>
@@ -133,6 +145,9 @@
                     <state key="normal" title="7">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="allNumsButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="939-7n-dU0"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDW-Wx-OQD">
                     <rect key="frame" x="97.5" y="210" width="87.5" height="50"/>
@@ -147,6 +162,9 @@
                     <state key="normal" title="8">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="allNumsButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="PNn-yf-tuS"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRK-uR-dSl">
                     <rect key="frame" x="282.5" y="210" width="87.5" height="50"/>
@@ -160,6 +178,9 @@
                     <state key="normal" title="." image="Backspace">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="deletePressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="0y7-Mn-bwb"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xc-A8-5ft">
                     <rect key="frame" x="190" y="210" width="87.5" height="50"/>
@@ -174,6 +195,9 @@
                     <state key="normal" title="9">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="allNumsButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="fLy-eL-9xV"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mt-TV-7b1">
                     <rect key="frame" x="5" y="155" width="87.5" height="50"/>
@@ -186,6 +210,9 @@
                     <state key="normal" title="4">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="allNumsButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="Db3-xQ-zcw"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4r-Fg-0ZN">
                     <rect key="frame" x="97.5" y="155" width="87.5" height="50"/>
@@ -200,6 +227,9 @@
                     <state key="normal" title="5">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="allNumsButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="qrd-gB-b4F"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcl-A0-Y8n">
                     <rect key="frame" x="282.5" y="155" width="87.5" height="50"/>
@@ -213,6 +243,9 @@
                     <state key="normal" title="-">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="minusButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="gdV-Wn-9fG"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfF-Dr-5Lt">
                     <rect key="frame" x="190" y="155" width="87.5" height="50"/>
@@ -227,6 +260,9 @@
                     <state key="normal" title="6">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="allNumsButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="NO4-v8-jlJ"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rg-Pb-RXI">
                     <rect key="frame" x="5" y="100" width="87.5" height="50"/>
@@ -239,6 +275,9 @@
                     <state key="normal" title="1">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="allNumsButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="fDu-cx-4bW"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Avi-Am-WuZ">
                     <rect key="frame" x="97.5" y="100" width="87.5" height="50"/>
@@ -253,6 +292,9 @@
                     <state key="normal" title="2">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="allNumsButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="aPI-c7-6dt"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPa-Bc-Fku">
                     <rect key="frame" x="282.5" y="100" width="87.5" height="50"/>
@@ -280,6 +322,9 @@
                     <state key="normal" title="3">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="allNumsButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="AR7-bW-7NA"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wp1-DO-cxV">
                     <rect key="frame" x="305" y="62" width="60" height="31"/>
@@ -340,6 +385,8 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="deleteButton" destination="uRK-uR-dSl" id="YFd-1w-NCk"/>
+                <outlet property="doneButton" destination="8Am-ZT-SdT" id="8Eo-dT-tTf"/>
                 <outlet property="keyboardControlView" destination="fj2-1S-yvW" id="qrJ-fU-ODi"/>
                 <outlet property="nextKeyboardButton" destination="QXy-nG-Neo" id="8ww-8d-2Cb"/>
             </connections>
