@@ -20,6 +20,8 @@ class KeyboardViewController: UIInputViewController {
         let nib = UINib(nibName: "StockKeyboardView", bundle: nil)
         let objects = nib.instantiate(withOwner: nil, options: nil)
         stockKeyboardView = objects.first as! StockKeyboardView
+        stockKeyboardView.delegate = self
+
         // UIInputViewController 裡的 property
         guard let inputView = inputView else { return }
         inputView.addSubview(stockKeyboardView)
@@ -32,57 +34,33 @@ class KeyboardViewController: UIInputViewController {
             stockKeyboardView.rightAnchor.constraint(equalTo: inputView.rightAnchor),
             stockKeyboardView.bottomAnchor.constraint(equalTo: inputView.bottomAnchor)
             ])
+        
+        // handleInputModeList will automatically handle switching
+        stockKeyboardView.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
     }
-    
-    
 
 }
 
-
-
-//class KeyboardViewController: UIInputViewController {
-//
-//    @IBOutlet var nextKeyboardButton: UIButton!
-//
-//    override func updateViewConstraints() {
-//        super.updateViewConstraints()
-//
-//        // Add custom view sizing constraints here
-//    }
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Perform custom UI setup here
-//        self.nextKeyboardButton = UIButton(type: .system)
-//
-//        self.nextKeyboardButton.setTitle(NSLocalizedString("Next Keyboard", comment: "Title for 'Next Keyboard' button"), for: [])
-//        self.nextKeyboardButton.sizeToFit()
-//        self.nextKeyboardButton.translatesAutoresizingMaskIntoConstraints = false
-//
-//        self.nextKeyboardButton.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .allTouchEvents)
-//
-//        self.view.addSubview(self.nextKeyboardButton)
-//
-//        self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
-//        self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
-//    }
-//
-//    override func textWillChange(_ textInput: UITextInput?) {
-//        // The app is about to change the document's contents. Perform any preparation here.
-//    }
-//
-//    override func textDidChange(_ textInput: UITextInput?) {
-//        // The app has just changed the document's contents, the document context has been updated.
-//
-//        var textColor: UIColor
-//        let proxy = self.textDocumentProxy
-//        if proxy.keyboardAppearance == UIKeyboardAppearance.dark {
-//            textColor = UIColor.white
-//        } else {
-//            textColor = UIColor.black
-//        }
-//        self.nextKeyboardButton.setTitleColor(textColor, for: [])
-//    }
-//
-//}
+extension KeyboardViewController: StockKeyboardViewDelegate {
+    
+    func doneBtnPressed() {
+    }
+    
+    // a custom keyboard extension doesn’t have direct access to the text input view. What you do have access to is a property of type of UITextDocumentProxy.
+    func insertCharacter(_ newCharacter: String) {
+        textDocumentProxy.insertText(newCharacter)
+    }
+    
+    func deleteCharacterBeforeCursor() {
+        textDocumentProxy.deleteBackward()
+    }
+    
+    func characterBeforeCursor() -> String? {
+        guard let character = textDocumentProxy.documentContextBeforeInput?.last else {
+            return nil
+        }
+        return String(character)
+    }
+    
+    
+}

@@ -75,3 +75,25 @@ extension MainViewController {
         }
     }
 }
+
+extension MainViewController: StockKeyboardViewDelegate {
+    
+    func doneBtnPressed() {
+        unitTxtField.resignFirstResponder()
+        priceTxtField.becomeFirstResponder()
+    }
+    
+    func insertCharacter(_ newCharacter: String) {
+        unitTxtField.insertText(newCharacter)
+    }
+    
+    func deleteCharacterBeforeCursor() {
+    
+    }
+    
+    func characterBeforeCursor() -> String? {
+        return "YA"
+    }
+    
+    
+}

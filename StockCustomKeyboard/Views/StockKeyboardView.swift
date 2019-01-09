@@ -11,10 +11,11 @@ import UIKit
 // Delegate method for the stock keyboard view that will allow it to perform actions on whatever text entry you want to use it with.
 protocol StockKeyboardViewDelegate: AnyObject {
     
-    var doneBtnPressed: Bool { get set }
+    func doneBtnPressed()
     func insertCharacter(_ newCharacter: String)
     func deleteCharacterBeforeCursor()
     func characterBeforeCursor() -> String?
+    
 }
 
 // Contains all of the logic for handling button taps and translating that info specifi actions on the text entry associated with it
@@ -41,7 +42,13 @@ public class StockKeyboardView: UIView {
     private func setNextKeyboardVisible(_ visible: Bool) {
         nextKeyboardButton.isHidden = !visible
     }
+    
+    @IBAction func doneButtonPressed(_ sender: UIButton) {
+        delegate?.doneBtnPressed()
+        print("YA")
+    }
 
+    
 }
 
 // MARK: - Actions
@@ -54,9 +61,7 @@ extension StockKeyboardView {
         delegate?.insertCharacter(pressedValue)
     }
     
-    @IBAction func donButtonPressed(_ sender: UIButton) {
-        delegate?.doneBtnPressed = true
-    }
+
     
     @IBAction func deletePressed(_ sender: UIButton) {
         delegate?.deleteCharacterBeforeCursor()
@@ -66,3 +71,4 @@ extension StockKeyboardView {
         
     }
 }
+
